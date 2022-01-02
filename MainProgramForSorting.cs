@@ -19,6 +19,16 @@ namespace SortingInCSharp
             Console.WriteLine("\nWelcome to Bubble sort. Sorted array is: ");
             obj1.printArray1(arr1);
 
+            // Merge Sort
+            int[] arr2 = { 12, 11, 13, 5, 6, 7 };
+            Console.WriteLine("\nWelcome to Bubble sort: ");
+            Console.WriteLine("Given Array");
+            MergeSort ob2 = new MergeSort();
+            ob2.printArray2(arr2);
+
+            ob2.sort(arr2, 0, arr2.Length - 1);
+            Console.WriteLine("\nSorted array");
+            ob2.printArray2(arr2);
         }
     }
 }
